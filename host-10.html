@@ -101,7 +101,7 @@ body{background-color:#f4f4f8;}
 /* image tint overlay */
 .q-img-wrap{flex-shrink:0;display:none;position:relative;border-radius:var(--r);overflow:hidden;text-align:center;}
 .q-img-wrap.show{display:block;}
-.q-img-wrap img{width:100%;max-height:clamp(180px,28vw,380px);object-fit:cover;display:block;border-radius:var(--r);box-shadow:var(--g-sh-lg);margin:0 auto;}
+.q-img-wrap img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:var(--r);box-shadow:var(--g-sh-lg);margin:0 auto;}
 .q-img-wrap::after{content:'';position:absolute;inset:0;border-radius:var(--r);pointer-events:none;mix-blend-mode:multiply;transition:background .5s;}
 .theme-rocky .q-img-wrap::after{background:rgba(180,130,240,.22);}
 .theme-keef  .q-img-wrap::after{background:rgba(80,200,140,.22);}
